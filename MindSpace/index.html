@@ -1,0 +1,873 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MindSpace adalah ruang digital untuk membantu anak muda mengenali perasaan, melakukan refleksi diri, dan menemukan dukungan yang tepat.">
+  <meta name="theme-color" content="#7568d9">
+
+  <title>MindSpace — Ruang Aman untuk Memahami Diri</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font website -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Akses cepat untuk pengguna keyboard -->
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <!-- HEADER DAN NAVIGASI -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#beranda" aria-label="MindSpace, kembali ke beranda">
+        <span class="brand-icon" aria-hidden="true">✦</span>
+        <span>mind<span class="brand-accent">space</span></span>
+      </a>
+
+      <!-- Tombol menu pada perangkat mobile -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Navigasi utama">
+        <a class="nav-link active" href="#beranda">Beranda</a>
+        <a class="nav-link" href="#mood">Mood</a>
+        <a class="nav-link" href="#self-check">Self-check</a>
+        <a class="nav-link" href="#jurnal">Jurnal</a>
+        <a class="nav-link" href="#bantuan">Bantuan</a>
+      </nav>
+
+      <a class="header-cta" href="#mood">
+        Mulai sekarang <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- BERANDA -->
+    <section class="hero section" id="beranda" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <span class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Ruang aman untuk dirimu
+          </span>
+
+          <h1 id="hero-title">
+            Tidak harus selalu
+            <span class="text-accent">baik-baik saja.</span>
+          </h1>
+
+          <p class="hero-description">
+            Hai, apa kabar kamu hari ini? Luangkan sedikit waktu
+            untuk memahami perasaanmu, merawat diri, dan mengambil
+            langkah kecil sesuai kemampuanmu.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#mood">
+              Kenali perasaanku <span aria-hidden="true">→</span>
+            </a>
+            <a class="button button-secondary" href="#tentang">
+              Jelajahi MindSpace
+            </a>
+          </div>
+
+          <p class="hero-note">
+            <span aria-hidden="true">♡</span>
+            Pelan-pelan saja. Kamu tidak harus menyelesaikan semuanya hari ini.
+          </p>
+        </div>
+
+        <!-- Ilustrasi dekoratif yang dibuat menggunakan CSS -->
+        <div class="hero-art" aria-label="Ilustrasi suasana tenang" role="img">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+
+          <div class="art-plant plant-left">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="art-plant plant-right">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="art-person">
+            <div class="person-hair"></div>
+            <div class="person-face">
+              <span class="person-eye eye-left"></span>
+              <span class="person-eye eye-right"></span>
+              <span class="person-smile"></span>
+            </div>
+            <div class="person-body"></div>
+          </div>
+
+          <div class="floating-note note-top">
+            <span aria-hidden="true">☁</span> Ambil jeda
+          </div>
+
+          <div class="floating-note note-bottom">
+            <span aria-hidden="true">♡</span> Kamu berharga
+          </div>
+
+          <span class="art-star star-one" aria-hidden="true">✦</span>
+          <span class="art-star star-two" aria-hidden="true">✧</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGANTAR WEBSITE -->
+    <section class="intro section section-soft" id="tentang">
+      <div class="container intro-inner">
+
+        <div>
+          <span class="eyebrow">Selamat datang di MindSpace</span>
+          <h2>
+            Mulai dari hal kecil,
+            <span class="text-accent">mulai dari dirimu.</span>
+          </h2>
+        </div>
+
+        <p>
+          MindSpace adalah teman digital untuk refleksi diri dan edukasi
+          kesehatan mental. Kamu bisa mencatat suasana hati, mencoba latihan
+          sederhana, dan mencari tahu ke mana harus melangkah ketika
+          membutuhkan dukungan.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- MOOD CHECK-IN -->
+    <section class="section" id="mood">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Mood check-in</span>
+            <h2>Apa yang kamu rasakan hari ini?</h2>
+            <p>
+              Tidak ada jawaban benar atau salah.
+              Pilih yang paling mendekati perasaanmu.
+            </p>
+          </div>
+          <span class="section-icon" aria-hidden="true">☀</span>
+        </div>
+
+        <form class="mood-form card" id="mood-form">
+
+          <fieldset class="mood-options-fieldset">
+            <legend class="visually-hidden">Pilih suasana hati</legend>
+
+            <div class="mood-options" id="mood-options">
+
+              <label class="mood-option">
+                <input type="radio" name="mood" value="senang" required>
+                <span class="mood-emoji" aria-hidden="true">😊</span>
+                <span class="mood-label">Senang</span>
+              </label>
+
+              <label class="mood-option">
+                <input type="radio" name="mood" value="tenang">
+                <span class="mood-emoji" aria-hidden="true">😌</span>
+                <span class="mood-label">Tenang</span>
+              </label>
+
+              <label class="mood-option">
+                <input type="radio" name="mood" value="biasa">
+                <span class="mood-emoji" aria-hidden="true">😐</span>
+                <span class="mood-label">Biasa saja</span>
+              </label>
+
+              <label class="mood-option">
+                <input type="radio" name="mood" value="cemas">
+                <span class="mood-emoji" aria-hidden="true">😟</span>
+                <span class="mood-label">Cemas</span>
+              </label>
+
+              <label class="mood-option">
+                <input type="radio" name="mood" value="sedih">
+                <span class="mood-emoji" aria-hidden="true">😔</span>
+                <span class="mood-label">Sedih</span>
+              </label>
+
+              <label class="mood-option">
+                <input type="radio" name="mood" value="kewalahan">
+                <span class="mood-emoji" aria-hidden="true">😵‍💫</span>
+                <span class="mood-label">Kewalahan</span>
+              </label>
+
+            </div>
+          </fieldset>
+
+          <div class="mood-extra">
+
+            <label for="mood-intensity">
+              Seberapa kuat perasaan ini?
+            </label>
+
+            <div class="range-row">
+              <span class="range-caption">Ringan</span>
+              <input
+                id="mood-intensity"
+                name="intensity"
+                type="range"
+                min="1"
+                max="5"
+                value="3">
+              <span class="range-caption">Kuat</span>
+              <output id="intensity-output" for="mood-intensity">3/5</output>
+            </div>
+
+            <label for="mood-trigger">
+              Apa yang mungkin memengaruhinya?
+              <span class="optional-label">Opsional</span>
+            </label>
+
+            <select id="mood-trigger" name="trigger">
+              <option value="">Pilih jika kamu mau</option>
+              <option value="sekolah">Sekolah atau tugas</option>
+              <option value="keluarga">Keluarga</option>
+              <option value="pertemanan">Pertemanan</option>
+              <option value="media-sosial">Media sosial</option>
+              <option value="istirahat">Tidur atau istirahat</option>
+              <option value="diri-sendiri">Pikiran tentang diri sendiri</option>
+              <option value="lainnya">Hal lainnya</option>
+            </select>
+
+          </div>
+
+          <button class="button button-primary" type="submit">
+            Simpan check-in <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="form-feedback" id="mood-feedback" role="status" aria-live="polite"></p>
+
+          <p class="privacy-note">
+            <span aria-hidden="true">🔒</span>
+            Catatan mood dirancang untuk disimpan di browser perangkatmu.
+          </p>
+
+        </form>
+
+        <!-- Riwayat mood -->
+        <div class="mood-history card">
+          <div class="card-heading">
+            <div>
+              <h3>Perjalanan mood-mu</h3>
+              <p>
+                Catatanmu membantu melihat pola, bukan memberi label pada dirimu.
+              </p>
+            </div>
+            <span class="small-badge">7 hari terakhir</span>
+          </div>
+
+          <div
+            class="mood-chart-placeholder"
+            id="mood-chart"
+            aria-label="Grafik riwayat mood akan ditampilkan di sini">
+
+            <span class="placeholder-icon" aria-hidden="true">☁</span>
+            <p>Riwayat mood akan muncul setelah kamu membuat check-in.</p>
+          </div>
+
+          <ul
+            class="mood-history-list"
+            id="mood-history-list"
+            aria-label="Daftar catatan mood terbaru">
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SELF-CHECK / KUESIONER -->
+    <section class="section section-soft" id="self-check">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Kenali dirimu</span>
+            <h2>Luangkan waktu untuk memahami dirimu.</h2>
+            <p>
+              Refleksi singkat untuk mengenali hal-hal yang mungkin
+              sedang membebani pikiranmu.
+            </p>
+          </div>
+          <span class="section-icon" aria-hidden="true">♡</span>
+        </div>
+
+        <div class="questionnaire-layout">
+
+          <div class="questionnaire-intro card">
+            <div class="feature-illustration illustration-check" aria-hidden="true">✧</div>
+
+            <h3>Self-check 2–3 menit</h3>
+
+            <p>
+              Jawab beberapa pertanyaan tentang keseharianmu.
+              Kamu boleh berhenti kapan saja dan tidak perlu menjawab
+              hal yang membuatmu tidak nyaman.
+            </p>
+
+            <ul class="check-list">
+              <li><span aria-hidden="true">✓</span> Pertanyaan refleksi sederhana</li>
+              <li><span aria-hidden="true">✓</span> Ringkasan jawabanmu</li>
+              <li><span aria-hidden="true">✓</span> Saran langkah kecil yang bisa dicoba</li>
+            </ul>
+
+            <p class="disclaimer-inline">
+              Ini bukan alat diagnosis dan tidak menggantikan bantuan profesional.
+            </p>
+
+            <button class="button button-primary" id="start-questionnaire" type="button">
+              Mulai refleksi <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <!-- JavaScript akan mengisi pertanyaan di area ini -->
+          <div class="questionnaire-panel card" id="questionnaire-panel" aria-live="polite">
+
+            <div class="questionnaire-empty" id="questionnaire-empty">
+              <span class="empty-icon" aria-hidden="true">☁</span>
+              <h3>Ruang refleksimu siap</h3>
+              <p>
+                Tekan tombol “Mulai refleksi” untuk menjawab pertanyaan satu per satu.
+              </p>
+            </div>
+
+            <form id="questionnaire-form" hidden>
+
+              <div class="questionnaire-progress-row">
+                <span id="question-progress-label">Pertanyaan 1 dari 8</span>
+                <span id="question-progress-percent">12%</span>
+              </div>
+
+              <div
+                class="progress-track"
+                role="progressbar"
+                id="question-progress"
+                aria-label="Kemajuan kuesioner"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0">
+                <span id="question-progress-bar"></span>
+              </div>
+
+              <fieldset class="question-fieldset">
+                <legend id="question-text">
+                  Pertanyaan akan ditampilkan di sini.
+                </legend>
+                <div class="answer-options" id="answer-options"></div>
+              </fieldset>
+
+              <p
+                class="form-feedback"
+                id="question-feedback"
+                role="status"
+                aria-live="polite">
+              </p>
+
+              <div class="questionnaire-actions">
+                <button class="button button-secondary" id="question-back" type="button">
+                  Kembali
+                </button>
+                <button class="button button-primary" id="question-next" type="button">
+                  Selanjutnya →
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Ringkasan hasil refleksi -->
+            <div class="questionnaire-result" id="questionnaire-result" hidden>
+              <span class="result-icon" aria-hidden="true">🌱</span>
+              <h3>Terima kasih sudah meluangkan waktu.</h3>
+
+              <p id="questionnaire-result-text">
+                Jawabanmu dapat menjadi bahan refleksi.
+                Satu kuesioner tidak bisa menggambarkan seluruh dirimu.
+              </p>
+
+              <div id="questionnaire-answer-summary"></div>
+
+              <button
+                class="button button-secondary"
+                id="restart-questionnaire"
+                type="button">
+                Ulangi refleksi
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALM CORNER / LATIHAN PERNAPASAN -->
+    <section class="section" id="calm-corner">
+      <div class="container calm-layout">
+
+        <div class="calm-copy">
+          <span class="eyebrow">Calm corner</span>
+
+          <h2>
+            Berhenti sejenak.
+            <span class="text-accent">Tarik napas.</span>
+          </h2>
+
+          <p>
+            Kamu tidak harus menyelesaikan semuanya sekarang.
+            Coba ambil jeda singkat dan pilih latihan yang terasa nyaman untukmu.
+          </p>
+
+          <ul class="calm-benefits">
+            <li>
+              <span class="benefit-icon" aria-hidden="true">◷</span>
+              <span>
+                <strong>Latihan singkat</strong><br>
+                <small>Mulai dari satu menit saja.</small>
+              </span>
+            </li>
+
+            <li>
+              <span class="benefit-icon" aria-hidden="true">☁</span>
+              <span>
+                <strong>Tanpa target berlebihan</strong><br>
+                <small>Berhenti kapan pun kamu mau.</small>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="breathing-card card">
+          <span class="small-badge">Latihan pernapasan</span>
+
+          <div class="breathing-visual" id="breathing-visual" aria-hidden="true">
+            <div class="breathing-ring">
+              <div class="breathing-circle"></div>
+            </div>
+          </div>
+
+          <p class="breathing-instruction" id="breathing-instruction" aria-live="polite">
+            Siap mengambil jeda?
+          </p>
+
+          <p class="breathing-timer" id="breathing-timer">01:00</p>
+
+          <div class="breathing-controls">
+            <button class="button button-primary" id="breathing-start" type="button">
+              Mulai latihan
+            </button>
+            <button class="button button-secondary" id="breathing-stop" type="button" disabled>
+              Berhenti
+            </button>
+          </div>
+
+          <p class="small-help">
+            Bernapaslah secara alami. Jika merasa tidak nyaman, hentikan
+            latihan dan kembali ke napas biasa.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- JURNAL PRIBADI -->
+    <section class="section section-soft" id="jurnal">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">My journal</span>
+            <h2>Tuliskan apa yang ada di pikiranmu.</h2>
+            <p>
+              Kamu tidak perlu merangkai kata dengan sempurna.
+              Mulai saja dari apa yang kamu rasakan.
+            </p>
+          </div>
+          <span class="section-icon" aria-hidden="true">✎</span>
+        </div>
+
+        <div class="journal-layout">
+
+          <form class="journal-form card" id="journal-form">
+
+            <label for="journal-prompt">Pertanyaan refleksi</label>
+            <select id="journal-prompt" name="prompt">
+              <option value="Apa yang paling menguras energiku hari ini?">
+                Apa yang paling menguras energiku hari ini?
+              </option>
+              <option value="Apa satu hal kecil yang berhasil kulakukan?">
+                Apa satu hal kecil yang berhasil kulakukan?
+              </option>
+              <option value="Apa yang kubutuhkan untuk esok hari?">
+                Apa yang kubutuhkan untuk esok hari?
+              </option>
+              <option value="Apa yang ingin kusyukuri hari ini?">
+                Apa yang ingin kusyukuri hari ini?
+              </option>
+              <option value="Catatan bebas">Catatan bebas</option>
+            </select>
+
+            <label for="journal-entry">
+              Catatanmu <span class="optional-label">Pribadi</span>
+            </label>
+
+            <textarea
+              id="journal-entry"
+              name="entry"
+              rows="6"
+              maxlength="3000"
+              placeholder="Tulis apa pun yang ingin kamu ungkapkan..."
+              required></textarea>
+
+            <div class="textarea-footer">
+              <span>Catatan hanya untuk dirimu di browser ini.</span>
+              <span id="journal-char-count">0/3000</span>
+            </div>
+
+            <input type="hidden" id="journal-edit-id" name="editId" value="">
+
+            <div class="journal-actions">
+              <button class="button button-primary" id="journal-save" type="submit">
+                Simpan catatan
+              </button>
+
+              <button
+                class="button button-secondary"
+                id="journal-cancel-edit"
+                type="button"
+                hidden>
+                Batal edit
+              </button>
+            </div>
+
+            <p class="form-feedback" id="journal-feedback" role="status" aria-live="polite"></p>
+
+            <p class="privacy-note">
+              <span aria-hidden="true">🔒</span>
+              Jangan gunakan perangkat bersama jika catatanmu berisi informasi pribadi.
+            </p>
+
+          </form>
+
+          <!-- Daftar catatan jurnal -->
+          <div class="journal-entries card">
+
+            <div class="card-heading">
+              <div>
+                <h3>Catatan pribadiku</h3>
+                <p>Catatan tersimpan di browser ini.</p>
+              </div>
+              <span class="small-badge" id="journal-count">0 catatan</span>
+            </div>
+
+            <div class="journal-list" id="journal-list">
+              <div class="empty-state" id="journal-empty">
+                <span aria-hidden="true">📖</span>
+                <p>Belum ada catatan. Kamu bisa mulai menulis kapan saja.</p>
+              </div>
+            </div>
+
+            <button
+              class="text-button danger-text"
+              id="delete-all-journals"
+              type="button"
+              hidden>
+              Hapus semua catatan
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMALL STEPS / KEBIASAAN SEHAT -->
+    <section class="section" id="small-steps">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Small steps</span>
+            <h2>Satu langkah kecil tetap berarti.</h2>
+            <p>
+              Pilih kegiatan sederhana yang terasa mungkin kamu lakukan hari ini.
+            </p>
+          </div>
+          <span class="section-icon" aria-hidden="true">🌱</span>
+        </div>
+
+        <div class="steps-progress card">
+          <div class="steps-progress-copy">
+            <strong>Progres hari ini</strong>
+            <span id="steps-progress-label">0 dari 5 selesai</span>
+          </div>
+
+          <div
+            class="progress-track"
+            role="progressbar"
+            id="steps-progress"
+            aria-label="Progres kebiasaan hari ini"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0">
+            <span id="steps-progress-bar"></span>
+          </div>
+        </div>
+
+        <div class="habit-grid" id="habit-list">
+
+          <label class="habit-card card">
+            <input type="checkbox" name="habit" value="air">
+            <span class="habit-icon" aria-hidden="true">💧</span>
+            <span class="habit-copy">
+              <strong>Minum air</strong>
+              <small>Berikan tubuhmu perhatian.</small>
+            </span>
+            <span class="habit-check" aria-hidden="true">✓</span>
+          </label>
+
+          <label class="habit-card card">
+            <input type="checkbox" name="habit" value="jeda">
+            <span class="habit-icon" aria-hidden="true">🌿</span>
+            <span class="habit-copy">
+              <strong>Istirahat dari layar</strong>
+              <small>Ambil jeda beberapa menit.</small>
+            </span>
+            <span class="habit-check" aria-hidden="true">✓</span>
+          </label>
+
+          <label class="habit-card card">
+            <input type="checkbox" name="habit" value="gerak">
+            <span class="habit-icon" aria-hidden="true">🚶</span>
+            <span class="habit-copy">
+              <strong>Bergerak sebentar</strong>
+              <small>Peregangan atau berjalan ringan.</small>
+            </span>
+            <span class="habit-check" aria-hidden="true">✓</span>
+          </label>
+
+          <label class="habit-card card">
+            <input type="checkbox" name="habit" value="rapi">
+            <span class="habit-icon" aria-hidden="true">🪴</span>
+            <span class="habit-copy">
+              <strong>Rapikan satu hal</strong>
+              <small>Pilih area kecil saja.</small>
+            </span>
+            <span class="habit-check" aria-hidden="true">✓</span>
+          </label>
+
+          <label class="habit-card card">
+            <input type="checkbox" name="habit" value="teman">
+            <span class="habit-icon" aria-hidden="true">💌</span>
+            <span class="habit-copy">
+              <strong>Sapa orang tepercaya</strong>
+              <small>Kirim pesan atau berbincang.</small>
+            </span>
+            <span class="habit-check" aria-hidden="true">✓</span>
+          </label>
+
+        </div>
+
+        <p class="gentle-reminder">
+          Tidak apa-apa jika belum semuanya selesai.
+          Pilih yang sesuai dengan kebutuhan dan kemampuanmu.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- BANTUAN DAN DUKUNGAN -->
+    <section class="section support-section" id="bantuan">
+      <div class="container">
+
+        <div class="support-banner">
+          <div class="support-copy">
+            <span class="eyebrow">Kamu tidak harus sendirian</span>
+            <h2>Tidak apa-apa untuk meminta bantuan.</h2>
+
+            <p>
+              Jika hal yang kamu hadapi terasa berat, berbicara dengan orang
+              yang tepercaya bisa menjadi langkah awal. Kamu berhak didengarkan
+              tanpa dihakimi.
+            </p>
+
+            <a class="button button-light" href="#panduan-bercerita">
+              Cara memulai percakapan <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="support-art" aria-hidden="true">
+            <span>♡</span><span>✦</span><span>☁</span>
+          </div>
+        </div>
+
+        <div class="support-cards">
+
+          <article class="support-card card">
+            <span class="support-card-icon" aria-hidden="true">🧑‍🏫</span>
+            <h3>Orang dewasa tepercaya</h3>
+            <p>
+              Orang tua, wali, guru BK, konselor sekolah, atau orang dewasa
+              yang membuatmu merasa aman.
+            </p>
+          </article>
+
+          <article class="support-card card">
+            <span class="support-card-icon" aria-hidden="true">📚</span>
+            <h3>Informasi yang tepercaya</h3>
+            <p>
+              Pelajari kesehatan mental dari sumber resmi dan tenaga
+              profesional yang kompeten.
+            </p>
+            <a href="https://kemkes.go.id/" target="_blank" rel="noopener noreferrer">
+              Kementerian Kesehatan ↗
+            </a>
+          </article>
+
+          <article class="support-card card">
+            <span class="support-card-icon" aria-hidden="true">🤝</span>
+            <h3>Bantuan profesional</h3>
+            <p>
+              Jika kesulitan terus berlangsung atau mengganggu keseharian,
+              pertimbangkan berbicara dengan psikolog, psikiater,
+              atau tenaga kesehatan.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Panduan untuk memulai percakapan -->
+        <div class="conversation-guide card" id="panduan-bercerita">
+
+          <div>
+            <span class="eyebrow">Contoh kalimat</span>
+            <h3>Belum tahu harus mulai dari mana?</h3>
+          </div>
+
+          <blockquote id="support-script">
+            “Akhir-akhir ini aku merasa kewalahan dan ingin bercerita.
+            Bisa dengarkan aku sebentar? Aku belum tentu butuh solusi,
+            mungkin aku hanya ingin didengarkan.”
+          </blockquote>
+
+          <button class="button button-secondary" id="copy-support-script" type="button">
+            Salin contoh kalimat
+          </button>
+
+          <p class="form-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+
+        </div>
+
+        <!-- Informasi penting untuk keadaan darurat -->
+        <aside class="urgent-support" aria-labelledby="urgent-title">
+          <span class="urgent-icon" aria-hidden="true">♡</span>
+
+          <div>
+            <h3 id="urgent-title">Jika kamu merasa tidak aman saat ini</h3>
+            <p>
+              Segera hubungi orang dewasa tepercaya yang bisa mendampingimu,
+              tenaga kesehatan, atau layanan darurat setempat. Jangan menunggu
+              balasan dari website ini. MindSpace tidak memantau keadaanmu
+              dan bukan layanan darurat.
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- INFORMASI PRIVASI -->
+    <section class="section privacy-section" id="privasi">
+      <div class="container privacy-inner">
+
+        <span class="privacy-large-icon" aria-hidden="true">🔐</span>
+
+        <div>
+          <h2>Perasaanmu layak dihargai. Privasimu juga.</h2>
+
+          <p>
+            Versi demo ini dirancang untuk menyimpan jurnal, mood, dan progres
+            kebiasaan secara lokal di browser. Data lokal tidak otomatis
+            tersinkronisasi ke perangkat lain, tetapi bukan berarti terenkripsi
+            atau sepenuhnya aman dari orang yang mengakses perangkatmu.
+          </p>
+
+          <button class="text-button danger-text" id="delete-all-data" type="button">
+            Hapus semua data lokal
+          </button>
+
+          <p class="form-feedback" id="privacy-feedback" role="status" aria-live="polite"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="brand footer-brand" href="#beranda">
+        <span class="brand-icon" aria-hidden="true">✦</span>
+        <span>mind<span class="brand-accent">space</span></span>
+      </a>
+
+      <p>Pelan-pelan, kamu sedang belajar memahami dirimu.</p>
+
+      <p class="footer-disclaimer">
+        MindSpace adalah media edukasi dan refleksi diri,
+        bukan pengganti diagnosis atau perawatan profesional.
+      </p>
+
+      <span class="copyright">
+        © <span id="current-year">2026</span> MindSpace.
+        Dibuat dengan kepedulian.
+      </span>
+
+    </div>
+  </footer>
+
+  <!-- Dialog konfirmasi untuk tindakan penghapusan data -->
+  <dialog class="confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title">
+    <form method="dialog" class="confirm-dialog-content">
+
+      <h2 id="confirm-title">Konfirmasi tindakan</h2>
+      <p id="confirm-message">Apakah kamu yakin ingin melanjutkan?</p>
+
+      <div class="dialog-actions">
+        <button class="button button-secondary" value="cancel">
+          Batal
+        </button>
+
+        <button class="button button-danger" id="confirm-action" value="confirm">
+          Ya, lanjutkan
+        </button>
+      </div>
+
+    </form>
+  </dialog>
+
+  <!-- JavaScript untuk mengaktifkan seluruh interaksi -->
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
